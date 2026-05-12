@@ -39,7 +39,7 @@ img {
 }
 
 .logo {
-  width: 50%;
+  width: 20%;
 }
 
 .nom {
@@ -102,7 +102,7 @@ html {
   height: 50px;
   border: 1px solid #d9e3f2;
   border-radius: 14px;
-  background: #ffffff;
+  background: #e63946;
   align-items: center;
   justify-content: center;
   cursor: pointer;
@@ -204,8 +204,8 @@ html {
 }
 
 .carte {
-  min-height: 1800px;
-  width: 98%;
+  height: 2500px;
+  width: 80%;
   border-radius: 20px;
   margin: auto;
   padding: 10px;
@@ -233,17 +233,17 @@ html {
 
 .prog1 {
   width: 100%;
-  height: 26%;
+  height: 28%;
   display: flex;
   padding: 10px;
-  margin-bottom: 5%;
+  margin-bottom: 20px;
   background-color: #e63946;
   border-radius: 15px;
   box-shadow: 20px 20px 20px 20px rgba(0, 0, 0, 0.2);
 }
 
 .prog1-txt {
-  width: 49%;
+  width: 55%;
   height: 90%;
   padding: 15px;
   display: flex;
@@ -253,20 +253,21 @@ html {
 }
 
 .prog1 img {
-  width: 50%;
-  height: 100%;
+  width: 45%;
+  max-height: 100%;
   border-radius: 20px;
   box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.2);
 }
 
 .prog1 p {
   font-family: "Poppins", "Roboto", sans-serif;
-  width: 58%;
+  width: 90%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
-  font-size: 1.8rem;
+  align-items: center;
+  line-height: 75px;
+  font-size: 2rem;
   color: #1f2937;
 }
 
@@ -280,7 +281,7 @@ html {
 }
 
 .avantages {
-  width: 100%;
+  width: 90%;
   min-height: 900px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -290,7 +291,7 @@ html {
 .rect-avantage {
   height: 400px;
   width: 80%;
-  margin: auto;
+  margin: 0 auto;
   border: 1px solid transparent;
   box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.25);
   border-radius: 12px;
@@ -486,7 +487,7 @@ html {
 
 .coach-container {
   width: 85%;
-  height: 850px;
+  min-height: 850px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin: auto;
@@ -507,7 +508,7 @@ html {
   width: 50%;
   height: 95%;
   padding: 10px;
-  line-height: 60px;
+  line-height: 50px;
 }
 
 .coach-txt p {
@@ -622,13 +623,103 @@ form button:focus-visible {
   color: white;
 }
 
+@media (min-width: 1025px) {
+
+  .pres p {
+    font-size: 2.2rem;
+  }
+
+  .prog1-txt p {
+    font-size: 2rem;
+    padding: 1px;
+    line-height: 50px;
+  }
+
+  .prog1-txt p {
+    font-size: 1.7rem;
+  }
+
+  .logo {
+    width: 20%;
+  }
+
+  .rect-txt p {
+    font-size: 1.5rem;
+  }
+
+  .tarrifs {
+    width: 95%;
+  }
+
+  #sous-titre {
+    font-size: 2.8rem;
+  }
+
+  .carte-tarrif {
+    line-height: 70px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .pres p {
+    font-size: 2.2rem;
+  }
+
+  .prog1-txt p {
+    font-size: 2rem;
+    padding: 1px;
+    line-height: 50px;
+  }
+
+  .prog1-txt p {
+    font-size: 1.7rem;
+  }
+
+  .logo {
+    width: 60%;
+  }
+
+  .rect-txt p {
+    font-size: 1.5rem;
+  }
+
+  .tarrifs {
+    width: 95%;
+  }
+
+  #sous-titre {
+    font-size: 2.8rem;
+  }
+
+  .carte-tarrif {
+    line-height: 70px;
+  }
+
+  .coach-container {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .coach-txt {
+    line-height: 40px;
+  }
+
+  .coach-txt p {
+    font-size: 1.4rem;
+  }
+
+  .coach-img {
+    height: 65%;
+  }
+}
+
 @media (max-width: 860px) {
   .nom {
     font-size: 1.5rem;
   }
 
   .logo {
-    width: 250px;
+    width: 90%;
   }
 
   .menu {
@@ -679,6 +770,7 @@ form button:focus-visible {
   .prog1-txt p {
     font-size: 1.2rem;
     padding: 1px;
+    line-height: 50px;
   }
 
   #sous-titre {
@@ -693,6 +785,58 @@ form button:focus-visible {
   .footer-txt {
     width: 75%;
   }
+
+  .prog-rect {
+    width: 95%;
+  }
+
+  .rect-txt p {
+    font-size: 1.4rem;
+  }
+
+  .tarrifs {
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .carte-tarrif {
+    line-height: 60px;
+    width: 95%;
+  }
+
+  .form {
+    width: 90%;
+  }
+
+  .coach-container {
+    width: 90%;
+    height: 1250px;
+    padding: 10px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .coach-txt {
+    line-height: 40px;
+  }
+
+  .coach-txt p {
+    font-size: 1.4rem;
+  }
+
+  .coach-img {
+    height: 90%;
+  }
+
+  .coach-btn {
+    width: 150px;
+    height: 50px;
+  }
+
+  .coach-btn a {
+    font-size: 1rem;
+    font-weight: normal;
+  }
 }
 
 @media (max-width: 480px) {
@@ -701,15 +845,108 @@ form button:focus-visible {
   }
 
   #sous-titre {
-    font-size: 1.2rem;
-  }
-
-  .prog1-txt p {
-    font-size: 1rem;
-    padding: 0px;
+    font-size: 1.5rem;
   }
 
   .ln {
     width: 50%;
   }
+
+  .carte {
+    height: 1000px;
+    width: 100%;
+  }
+
+  .pres p {
+    font-size: 0.9rem;
+  }
+
+  .prog1 {
+    height: 28%;
+    align-items: center;
+  }
+
+  .prog1-txt p {
+    font-size: 0.8rem;
+    padding: 0px;
+    line-height: 20px;
+    text-align: center;
+  }
+
+  .prog1 img {
+    max-height: 75%;
+  }
+
+  .avantages {
+    width: 100%;
+  }
+
+  .rect-avantage {
+    width: 95%;
+  }
+
+  .footer-txt {
+    width: 100%;
+    font-size: 0.8rem;
+  }
+
+  .prog-progammes {
+    height: 1500px;
+    gap: 10px;
+  }
+
+  .rect-btn {
+    width: 75px;
+    height: 25px;
+  }
+
+  .rect-txt {
+    gap: 1px;
+  }
+
+  .rect-txt a {
+    font-size: 0.8rem;
+  }
+
+  .rect-txt p {
+    font-size: 0.8rem;
+  }
+
+  .carte-tarrif p {
+    font-size: 1.3rem;
+  }
+
+  .carte-tarrif {
+    line-height: 40px;
+  }
+
+    .coach-container {
+    width: 100%;
+    height: 1600px;
+    padding: 10px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .coach-txt {
+    line-height: 40px;
+  }
+
+  .coach-txt p {
+    font-size: 1.2rem;
+  }
+
+  .coach-img {
+    height: 65%;
+  }
+
+  .coach-btn {
+    width: 150px;
+    height: 50px;
+  }
+
+  .coach-btn a {
+    font-size: 1rem;
+    font-weight: normal;
+  }
+
 }
