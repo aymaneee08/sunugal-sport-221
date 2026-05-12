@@ -376,7 +376,7 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  gap: 50px;
+  gap: 30px;
 }
 
 .prog-rect {
@@ -459,7 +459,7 @@ html {
 
 .tarrifs {
   width: 75%;
-  height: 1000px;
+  height: 800px;
   margin: auto;
   display: flex;
   gap: 3%;
@@ -624,7 +624,6 @@ form button:focus-visible {
 }
 
 @media (min-width: 1025px) {
-
   .pres p {
     font-size: 2.2rem;
   }
@@ -658,6 +657,15 @@ form button:focus-visible {
   .carte-tarrif {
     line-height: 70px;
   }
+
+  .carte-tarrif p {
+    font-size: 1.85rem;
+  }
+
+  .coach-txt{
+    line-height: 45px;
+  }
+
 }
 
 @media (max-width: 1024px) {
@@ -692,7 +700,7 @@ form button:focus-visible {
   }
 
   .carte-tarrif {
-    line-height: 70px;
+    line-height: 50px;
   }
 
   .coach-container {
@@ -801,8 +809,12 @@ form button:focus-visible {
   }
 
   .carte-tarrif {
-    line-height: 60px;
+    line-height: 50px;
     width: 95%;
+  }
+
+  .carte-tarrif p {
+    font-size: 1.2rem;
   }
 
   .form {
@@ -913,14 +925,14 @@ form button:focus-visible {
   }
 
   .carte-tarrif p {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
 
   .carte-tarrif {
     line-height: 40px;
   }
 
-    .coach-container {
+  .coach-container {
     width: 100%;
     height: 1600px;
     padding: 10px;
@@ -948,5 +960,4 @@ form button:focus-visible {
     font-size: 1rem;
     font-weight: normal;
   }
-
 }
